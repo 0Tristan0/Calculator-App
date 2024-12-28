@@ -5,7 +5,7 @@ from fractions import Fraction
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
-        
+
         self.title("Calculator")
         self.geometry("400x700")
         self.configure(fg_color="#faf5ef")
@@ -243,9 +243,6 @@ class App(customtkinter.CTk):
                 nums = nums[:i] + "*" + nums[i:]
                 i+=1
             i+=1
-
-            
-            
 
         # closes parenthesis if the user forgot
         open_parenthesis_counter = 0
